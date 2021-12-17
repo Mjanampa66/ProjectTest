@@ -19,8 +19,7 @@ import com.FleetSpringBoot.parameters.service.ContactService;
 @Controller
 public class ContactController {
 	
-	//Linea para primera Prueba de Git
-	
+		
 	@Autowired
 	private ContactService contactService;
 	
@@ -30,7 +29,7 @@ public class ContactController {
 		model.addAttribute("contacts", contacts);
 		return "parameters/contactList";
 	}
-	//Segunda Linea paara Prueba GIT
+	
 	@GetMapping("/contactsAdd")
 	public String formAddContact() {
 		return "parameters/contactsAdd";
